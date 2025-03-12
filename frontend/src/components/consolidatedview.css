@@ -1,0 +1,93 @@
+/* ConsolidatedView Container */
+.consolidated-view {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  min-height: 2890px;
+  position: relative; /* Ensure relative positioning for the floating button */
+}
+
+/* Header Styling */
+.consolidated-header {
+  text-align: center;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consolidated-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Template Container */
+.template-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+/* Section Styling */
+.template-container h2 {
+  color: #0073e6;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Floating PDF Button */
+.pdf-button {
+  position: fixed; /* Fixed positioning to always stay visible */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right edge of the screen */
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000; /* Ensure it appears above other elements */
+  transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .consolidated-view {
+    padding: 15px;
+  }
+
+  .consolidated-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .template-container {
+    padding: 15px;
+    max-height: 60vh;
+  }
+
+  .pdf-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

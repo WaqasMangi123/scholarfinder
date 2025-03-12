@@ -1,0 +1,179 @@
+.education-page {
+  background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?size=626&ext=jpg&ga=GA1.1.569068876.1715629390&semt=ais_user');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: white;
+  min-height: 390vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-container {
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.header-container h1, .header-container h2 {
+  color: white;
+}
+
+.degree-selection {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+.degree-selection h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.degree-selection select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.degree-selection select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.degree-selection select option {
+  padding: 10px;
+}
+
+.degree-selection select:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.education-entry, .certificate-entry, .award-entry {
+  background-color: rgba(126, 126, 223, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.date-picker {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-button {
+  margin-top: 10px;
+}
+
+.add-button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.animated.fadeInDown {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

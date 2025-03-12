@@ -1,0 +1,81 @@
+/* Make the page container take up the full viewport */
+.page-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Styling for the image background */
+.image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensure the image is behind the content */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps the image covering the whole background */
+}
+
+/* Center content styling */
+.content {
+  text-align: center;
+  color: #fff; /* Change text color to white */
+  padding: 0 20px; /* Padding for mobile view */
+  max-width: 80%;
+}
+
+.content h1 {
+  font-size: 2.5rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Space below the heading */
+  color: #fff; /* White color */
+  text-shadow: none; /* Remove shadow effects */
+}
+
+.content p {
+  font-size: 1.2rem; /* Font size for paragraph */
+  margin-bottom: 1.5rem; /* Space below the paragraph */
+  font-weight: bold; /* Bold text */
+  text-shadow: none; /* Remove shadow effects */
+}
+
+.view-button {
+  font-size: 1.1rem; /* Font size for button */
+  padding: 0.8rem 1.5rem; /* Padding for button */
+  border: none; /* No border */
+  background-color: #007bff; /* Button color */
+  color: #fff; /* White text color for button */
+  cursor: pointer; /* Cursor change on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.view-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .content h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .content p {
+      font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .view-button {
+      font-size: 1rem; /* Smaller font size for button on mobile */
+      padding: 0.6rem 1.2rem; /* Smaller padding for button on mobile */
+  }
+}

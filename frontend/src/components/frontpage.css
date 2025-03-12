@@ -1,0 +1,391 @@
+/* Main layout */
+.front-page {
+  background: url('frontpagebackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Video background */
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: 70px;
+  border-radius: 10px;
+}
+
+.logo-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.logo {
+  height: 140px;
+  width: auto;
+}
+
+/* Hero text */
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.button-container .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin: 0 10px;
+  width: 160px;
+  border-radius: 5px;
+  background-color: #32a852;
+  color: #ffffff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.button-container .btn:hover {
+  background-color: #28a745;
+}
+
+/* Middle logo */
+.middle-logo {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.middle-logo-img {
+  height: 140px;
+  width: auto;
+  display: inline-block;
+}
+
+/* Info section */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(50, 168, 178, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.info-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.info-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* Feature section */
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.feature-item .feature-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #20808d;
+}
+
+.feature-item .feature-text p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.feature-video video, .info-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ATS Section */
+.ats-section {
+  text-align: center;
+  padding: 2rem;
+  background: #20808d;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.ats-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ats-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ats-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.ats-feature {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Customer Reviews */
+.customer-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  background: rgba(133, 184, 207, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.review-section h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  background: #ffffff;
+  color: #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.testimonial h4 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Bar Chart for Scholarship Statistics */
+.chart-container {
+  padding: 1rem;
+  background: #323494;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Tips Section with Image */
+.tips-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tips-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.tips-list {
+  list-style: disc;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* How ScholarFinder Works */
+.how-it-works-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.step {
+  max-width: 280px;
+  background: #ffffff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #20808d;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: #ffffff;
+  color: #20808d;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #166575;
+  color: #ffffff;
+}
+
+/* Popup Styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #1c7581;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(36, 35, 35, 0.5);
+  animation: fadeInPopup 0.5s ease-in-out;
+}
+
+@keyframes fadeInPopup {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #c2b0b0;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Collaboration Section Styling */
+.collaboration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.collaboration-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.collaboration-section p {
+  color: #f2f4f7;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.popup-close-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.popup-close-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

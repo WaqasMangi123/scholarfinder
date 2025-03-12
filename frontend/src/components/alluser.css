@@ -1,0 +1,177 @@
+/* AllUsers container styling */
+.all-users-container {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Search and Filter Container */
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-filter-container input,
+.search-filter-container select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.search-filter-container select {
+  cursor: pointer;
+}
+
+/* Table Container */
+.table-container {
+  max-width: 95%;
+  margin: 0 auto;
+  overflow-x: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ff6b6b;
+  padding: 20px;
+}
+
+/* Empty Data Styling */
+.empty-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  padding: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .page-title {
+    font-size: 2.4rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-table th,
+  .user-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+
+  .search-filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-filter-container input,
+  .search-filter-container select {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}

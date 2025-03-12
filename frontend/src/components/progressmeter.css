@@ -1,0 +1,71 @@
+/* Floating Progress Meter */
+.floating-progress-meter {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+.progress-button {
+    background-color: #383b3b;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.progress-button:hover {
+    background-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+.progress-tooltip {
+    position: absolute;
+    top: -90px;
+    left: 80px;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.progress-tooltip h4 {
+    margin-bottom: 12px;
+    color: #0d6efd;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.progress-tooltip p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.close-button {
+    background-color: #0d6efd;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-button:hover {
+    background-color: #0a58ca;
+    transform: translateY(-1px);
+}

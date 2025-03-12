@@ -1,0 +1,137 @@
+/* graphicalrepresentation.css */
+.graphical-representation-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.graphical-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.graph-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.statistics-info {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.statistics-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.statistics-info strong {
+    color: #007bff;
+}
+
+.data-entry-form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-entry-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.data-entry-form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.data-entry-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.data-entry-form input:focus {
+    border-color: #007bff;
+}
+
+.data-entry-form .btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.data-entry-form .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .graph-container {
+        padding: 15px;
+    }
+
+    .data-entry-form {
+        padding: 15px;
+    }
+
+    .data-entry-form label {
+        font-size: 1rem;
+    }
+
+    .statistics-info {
+        font-size: 1rem;
+    }
+}

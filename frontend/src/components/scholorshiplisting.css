@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('profile.jpeg'); /* Background image for full page */
+    background-size: cover; /* Make the image cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-color: #f4f4f4; /* Fallback background color */
+  }
+  
+  /* Scholarship Listing */
+  .scholarship-listing {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: #333;
+    position: relative; /* Allow positioning of content */
+    border-radius: 8px; /* Optional: Add rounded corners to the container */
+    background: rgba(255, 255, 255, 0.9); /* Light background for content area */
+  }
+  
+  /* Scholarship heading styling */
+  .scholarship-listing h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+  }
+  
+  /* Filter dropdowns styling */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 180px;
+    cursor: pointer;
+  }
+  
+  .scholarship-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Scholarship card styling */
+  .scholarship-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff; /* Background color for scholarship card */
+  }
+  
+  .scholarship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .scholarship-card h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .scholarship-card p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .scholarship-card strong {
+    color: #333;
+  }
+  
+  /* Scholarship image styling */
+  .scholarship-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #2c3e50;
+  }
+  
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e74c3c;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .scholarship-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .filters {
+      gap: 5px;
+    }
+  
+    .filters select {
+      min-width: 100px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .filters select {
+      min-width: 150px;
+    }
+  }
+  /* CSS for the note message */
+  .note-message {
+    background-color: #fffbea;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #856404;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  
+  .note-message p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .note-message button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #856404;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .note-message button:hover {
+    color: #b08904;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+  

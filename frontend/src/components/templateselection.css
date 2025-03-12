@@ -1,0 +1,286 @@
+/* Main container styling */
+.template-selection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/templateselectionbackground.jpeg'); /* Ensure the image is in the public directory */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #ffffff; /* Ensure text is readable on the background */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header container styling */
+.header-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.animated-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out, slideIn 1.5s ease-in-out;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+/* Templates container styling */
+.templates-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+/* Template card styling */
+.template-card {
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent for readability */
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.template-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.template-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.template-card p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Divider Line */
+.divider {
+  width: 80%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 40px auto;
+}
+
+/* Recommendations section styling */
+.recommendations-section {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.recommendations-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recommendations-image {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  opacity: 0.85;
+}
+
+.recommendations-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Ensure readability */
+  border-radius: 10px;
+}
+
+.recommendations-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.recommendations-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.recommendation-button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.recommendation-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Popup Styling */
+.template-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(133, 126, 126, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.template-popup-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeInPopup 0.5s ease-in-out;
+  color: #000000;
+}
+
+@keyframes fadeInPopup {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.template-popup-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.template-popup-content p {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.template-popup-close-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.template-popup-close-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 2.2rem;
+  }
+
+  .template-card {
+    width: 220px;
+    padding: 15px;
+  }
+
+  .recommendation-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .recommendations-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .template-popup-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-heading {
+    font-size: 1.8rem;
+  }
+
+  .templates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template-card {
+    width: 100%;
+  }
+
+  .recommendation-button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .recommendations-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .recommendations-overlay p {
+    font-size: 1rem;
+  }
+}

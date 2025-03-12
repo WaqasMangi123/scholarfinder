@@ -1,0 +1,159 @@
+/* Container styling */
+.scholarship-tips-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 250vh;
+}
+
+/* Main Heading */
+.scholarship-tips-page h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Tips Section */
+.tips-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f8faff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border: 1px solid #e0e8ff;
+}
+
+.tip-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Image styling for each tip */
+.tip-image {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d0d7ff;
+}
+
+/* Content for each tip */
+.tip-content h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.tip-content p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Guidance Section */
+.guidance-section {
+    padding: 30px 0;
+}
+
+.guidance-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.guidance-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guidance-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.guidance-text {
+    flex: 2;
+    color: #333;
+}
+
+.guidance-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #0056b3;
+}
+
+.guidance-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.guidance-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guidance-text li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.guidance-text li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ffdd57;
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tip-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tip-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .guidance-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guidance-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
