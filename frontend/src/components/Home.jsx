@@ -10,7 +10,6 @@ const templates = [
   { id: 4, imgSrc: '/resumepic4.jpg', name: 'Template 4' },
 ];
 
-
 const newsEvents = [
   { title: "New Scholarship for STEM Students", description: "A new scholarship for students pursuing STEM fields has been announced. Apply now!", imgSrc: "/news1.webp" },
   { title: "AI and Machine Learning Workshop", description: "Join our upcoming workshop on AI and Machine Learning to enhance your skills.", imgSrc: "/news3.webp" },
