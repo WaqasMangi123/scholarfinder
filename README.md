@@ -12,7 +12,7 @@ With a modern UI, secure authentication, and real-time scholarship updates (from
 
 🎯 Scholarship Matching Based on User Profile
 
-🌐 Country, Degree Level & Interest-Based Filters
+🌐 Country, Degree Level & Interest-Based Filter
 
 🗓️ Valid Deadline Checking and Filtering
 
