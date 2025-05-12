@@ -8,7 +8,7 @@ With a modern UI, secure authentication, and real-time scholarship updates (from
 ✅ Features
 🔐 Secure User Authentication (Login/Signup)
 
-📋 Dynamic Profile Managementt
+📋 Dynamic Profile Managementttttttttttttt
 
 🎯 Scholarship Matching Based on User Profile
 
