@@ -41,7 +41,7 @@ npm run dev
 This will run the frontend on: http://localhost:5173
 
 🌐 3. Setup Backend (Node.js + Express)
-bash
+bashh
 Copy
 Edit
 cd backend
