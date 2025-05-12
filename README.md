@@ -59,7 +59,7 @@ bash
 Copy
 Edit
 npm start
-The backend server will start on: http://localhost:5000
+The backend server will start on: http://localhost:3000
 
 ✅ 4. You're All Set!
 You can now
