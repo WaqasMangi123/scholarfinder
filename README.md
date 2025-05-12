@@ -6,7 +6,7 @@ By completing a user-friendly registration and profile form, students can input 
 With a modern UI, secure authentication, and real-time scholarship updates (fromm web scraping or curated databases),\ ScholarFinder ensures that users never miss an opportunity to fund their education.
 
 ✅ Features
-🔐 Secure User Authentication (Login/Signup
+🔐 Secure User Authentication Login/Signup
 
 📋 Dynamic Profile Managementtttt
 
