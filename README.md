@@ -62,7 +62,7 @@ npm start
 The backend server will start on: http://localhost:5000
 
 ✅ 4. You're All Set!
-You can now:
+You can now
 
 Register a new user
 
