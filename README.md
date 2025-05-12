@@ -16,7 +16,7 @@ With a modern UI, secure authentication, and real-time scholarship updates (from
 
 🗓️ Valid Deadline Checking and Filtering
 
-💾 MongoDB Atlas Database Integrationn
+💾 MongoDB Atlas Database Integration
 
 💡 Responsive Frontend Using React and Bootstrap
 
