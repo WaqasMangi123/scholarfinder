@@ -23,7 +23,7 @@ With a modern UI, secure authentication, and real-time scholarship updates (from
 🧠 Scalable Codebase With MERN Stack Architecture
 
 ⚙️ Installation & Getting Started
-Follow these steps to clone and run the project locally:
+Follow these steps to clone and run the project locally
 
 🔽 1. Clone the Repository
 bash
