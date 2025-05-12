@@ -74,7 +74,7 @@ Filter results based on your preferences
 
 🛠️ Technology Stack
 Category	Technology
-Frontend	React, React Router, Bootstrap
+Frontend	React, React Router Bootstrap
 Backend	Node.js, Express
 Database	MongoDB Atlas
 Web Scraping	Puppeteer (Optional)
