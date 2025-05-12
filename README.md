@@ -83,4 +83,4 @@ State Management	React Context API
 Deployment	(Coming Soon: Vercel / Render / Railway)
 
 🌟 Show Your Support
-If you find this project helpful, feel free to star ⭐ the repository and share it with others!
+If you find this project helpful, feel free to star ⭐ the repository and share it with others
