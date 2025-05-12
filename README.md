@@ -31,7 +31,7 @@ Copy
 Edit
 git clone https://github.com/your-username/scholarfinder.git
 cd scholarfinder
-💻 2. Setup Frontend (React)
+💻 2. Setup Frontend (React),
 bash
 Copy
 Edit
