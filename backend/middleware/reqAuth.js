@@ -9,7 +9,7 @@ const reqAuth = async (req, res, next) => {
         return res.status(401).json({ error: 'Authorization token missing' });
     }
 
-    const token = authorization.split(' ')[1]; // Extract token from "Bearer <token>"
+    const token = authorization.split(' ')[1]; 
 
     try {
         // Verify the token and extract the user ID
