@@ -1,7 +1,7 @@
 👋 Introduction
 ScholarFinder is a responsive and intelligent web platform built using the MERN Stack — MongoDB, ExpressJS, ReactJS, and NodeJS — aimed at helping students effortlessly discover scholarships that match their personal and academic profiles.
 
-By completing a user-friendly registration and profile form, students can input their education history, professional experience, areas of interest, and more. ScholarFinder then uses this data to provide personalized scholarship recommendations, filtering opportunities based on eligibility, field, country, and deadline.
+By completing a user-friendly registration and profile form, students can input their education history, professional experience, areas of interest, and more. ScholarFinder then uses this data to provide personalized scholarshi recommendations, filtering opportunities based on eligibility, field, country, and deadline.
 
 With a modern UI, secure authentication, and real-time scholarship updates (fromm web scraping or curated databases),\ ScholarFinder ensures that users never miss an opportunity to fund their education.
 
